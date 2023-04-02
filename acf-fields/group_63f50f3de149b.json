@@ -1,0 +1,521 @@
+{
+    "key": "group_63f50f3de149b",
+    "title": "Menü-Einstellungen",
+    "fields": [
+        {
+            "key": "field_63f50f3e47111",
+            "label": "",
+            "name": "main_menu_config",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_63f50f9047112",
+                    "label": "Menü-Ausrichtung",
+                    "name": "menu_align",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "desktop-menu-left": "Desktop-Menü links",
+                        "desktop-menu-center": "Desktop-Menü-zentriert",
+                        "desktop-menu-right": "Desktop-Menü rechts"
+                    },
+                    "default_value": "desktop-menu-right",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_63f7dd477685d",
+            "label": "Menü-Kontakt",
+            "name": "menu_contacts",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_63f530938bf8a",
+            "label": "Benutzerdefinierte Menü-Farben",
+            "name": "activate_custom_menu_colors",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_63f511cd7d4ac",
+            "label": "Menü-Farben mobil",
+            "name": "custom_menu_colors_mobile",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_63f530938bf8a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_63f512541034e",
+                    "label": "Background",
+                    "name": "mobile_menu_bg",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "white": "Weiß",
+                        "primary": "Primary-Color",
+                        "secondary": "Secondary-Color",
+                        "lighted": "Lighted-Color",
+                        "darken": "Darken-Color"
+                    },
+                    "default_value": "white",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63f5158804ea3",
+                    "label": "Font color",
+                    "name": "mobile_menu_color",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "base": "Standard",
+                        "white": "Weiß",
+                        "primary": "Primary-Color",
+                        "secondary": "Secondary-Color",
+                        "lighted": "Lighted-Color",
+                        "darken": "Darken-Color"
+                    },
+                    "default_value": "base",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63f52c1410152",
+                    "label": "Active Color",
+                    "name": "mobile_active_color",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "base": "Standard",
+                        "white": "Weiß",
+                        "primary": "Primary-Color",
+                        "secondary": "Secondary-Color",
+                        "lighted": "Lighted-Color",
+                        "darken": "Darken-Color"
+                    },
+                    "default_value": "primary",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_63f5408ac5342",
+            "label": "Menü-Farben Desktop",
+            "name": "custom_menu_colors_desktop",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_63f530938bf8a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_63f5408ac5343",
+                    "label": "Background",
+                    "name": "desktop_menu_bg",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "transparent": "Transparent",
+                        "white": "Weiß",
+                        "primary": "Primary-Color",
+                        "secondary": "Secondary-Color",
+                        "lighted": "Lighted-Color",
+                        "darken": "Darken-Color"
+                    },
+                    "default_value": "white",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63f5408ac5344",
+                    "label": "Font color",
+                    "name": "desktop_menu_color",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "base": "Standard",
+                        "white": "Weiß",
+                        "primary": "Primary-Color",
+                        "secondary": "Secondary-Color",
+                        "lighted": "Lighted-Color",
+                        "darken": "Darken-Color"
+                    },
+                    "default_value": "base",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63f540f2c5346",
+                    "label": "Hover Color",
+                    "name": "desktop_hover_color",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "base": "Standard",
+                        "white": "Weiß",
+                        "primary": "Primary-Color",
+                        "secondary": "Secondary-Color",
+                        "lighted": "Lighted-Color",
+                        "darken": "Darken-Color"
+                    },
+                    "default_value": "primary",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63f5408ac5345",
+                    "label": "Active Color",
+                    "name": "desktop_active_color",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "base": "Standard",
+                        "white": "Weiß",
+                        "primary": "Primary-Color",
+                        "secondary": "Secondary-Color",
+                        "lighted": "Lighted-Color",
+                        "darken": "Darken-Color"
+                    },
+                    "default_value": "primary",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63f5b71f2bc53",
+                    "label": "Submenü Background Color",
+                    "name": "desktop_submenu_bg",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "transparent": "Transparent",
+                        "white": "Weiß",
+                        "primary": "Primary-Color",
+                        "secondary": "Secondary-Color",
+                        "lighted": "Lighted-Color",
+                        "darken": "Darken-Color"
+                    },
+                    "default_value": "white",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63f5b8c49fae8",
+                    "label": "Submenü Hover Background Color",
+                    "name": "desktop_submenu_hover_bg",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "transparent": "Transparent",
+                        "white": "Weiß",
+                        "primary": "Primary-Color",
+                        "secondary": "Secondary-Color",
+                        "lighted": "Lighted-Color",
+                        "darken": "Darken-Color"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63f5bead44cbb",
+                    "label": "Submenü Font Color",
+                    "name": "desktop_submenu_color",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "base": "Standard",
+                        "white": "Weiß",
+                        "primary": "Primary-Color",
+                        "secondary": "Secondary-Color",
+                        "lighted": "Lighted-Color",
+                        "darken": "Darken-Color"
+                    },
+                    "default_value": "base",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63f5c019d37c5",
+                    "label": "Submenü Font Hover Color",
+                    "name": "desktop_submenu_hover_color",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "base": "Standard",
+                        "white": "Weiß",
+                        "primary": "Primary-Color",
+                        "secondary": "Secondary-Color",
+                        "lighted": "Lighted-Color",
+                        "darken": "Darken-Color"
+                    },
+                    "default_value": "base",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63f5c0193ac0a",
+                    "label": "Submenü Font Aktive Color",
+                    "name": "desktop_submenu_active_color",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "base": "Standard",
+                        "white": "Weiß",
+                        "primary": "Primary-Color",
+                        "secondary": "Secondary-Color",
+                        "lighted": "Lighted-Color",
+                        "darken": "Darken-Color"
+                    },
+                    "default_value": "base",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "inno-menu-config"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1677189188
+}
