@@ -1,0 +1,30 @@
+.events{
+
+  .event-title{
+    margin: 1.5em 0 1em 0;
+  }
+  .event-item{
+    margin-bottom: 2em;
+  }
+
+  .event-image-wrapper{
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    img{
+
+    }
+  }
+
+}
+
+.grid-col-2{
+  display: grid;
+  @media screen and (min-width: $sm) {
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+
+.grid-gap-2{
+  grid-gap: 2em;
+}

@@ -1,0 +1,80 @@
+.is-style-image-creative {
+  border-radius: 25px 80px 0 25px / 25px 80px 0 24px;
+}
+
+
+.is-style-image-right-rounded {
+  border-radius: 0 300px 0 0 / 0 150px 0 0;
+}
+
+.is-style-image-half-rounded {
+  border-radius: 200px 200px 0 0  / 150px 150px 0 0;
+}
+
+
+.is-style-image-creative,
+.is-style-image-right-rounded,
+.is-style-image-half-rounded {
+  overflow: hidden;
+  img {
+    transform: scale(1.0);
+    transition: 0.3s all;
+    position: relative;
+    z-index: 0;
+    display: block;
+  }
+
+  a {
+    position: relative;
+    z-index: 2;
+    display: block;
+    transition: 0.4s all;
+
+  }
+
+  a:hover > img {
+    transform: scale(1.05);
+    transition: 0.4s all;
+  }
+
+  a:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 0.3s opacity;
+  }
+
+  a:hover:before {
+    transition: 0.3s opacity;
+    opacity: 1;
+  }
+
+  a:after {
+    content: "Mehr erfahren";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transition: 0.3s all;
+    opacity: 0;
+    color: #fff;
+    font-family: $headline-special-font-family;
+    font-size: 2em;
+    z-index: 3;
+  }
+
+  a:hover:after {
+    opacity: 1;
+    transition: 0.3s all;
+  }
+
+}
+
+
+
