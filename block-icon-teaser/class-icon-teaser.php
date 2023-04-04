@@ -1,4 +1,4 @@
-icon-teaser.phpicon-teaser.phpicon-teaser.php<?php
+<?php
 
 class tsc__IconTeaser
 {
