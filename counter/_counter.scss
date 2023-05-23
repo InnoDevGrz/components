@@ -1,0 +1,49 @@
+.counter {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  padding: 30px;
+  margin: 1em auto !important;
+  &:after {
+    content: "%";
+    position: absolute;
+    top: 30px;
+    right: 0;
+    text-align: center;
+    font-size: 25px;
+
+  }
+
+
+
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 165px;
+    height: 165px;
+    border-radius: 70%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    animation: progress 3s ease-in-out;
+    animation-fill-mode: forwards;
+    transform: rotate(-360deg);
+  }
+
+  @keyframes progress {
+    0% {
+      transform: rotate(-0deg);
+      border-color: transparent transparent transparent white;
+    }
+
+    99% {
+      transform: rotate(360deg);
+      border-color: white white white white;
+    }
+    100% {
+      border-color: white white white white;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  max-height: 90vh;
+
+  &:after {
+    position: absolute;
+    content: "";
+    height: 140px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background-image: url("assets/images/wild-section-divider.svg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: calc(100vw + 2px) !important;
+    z-index: 3;
+    @media screen and (min-width: $xl) {
+      height: 200px;
+    }
+
+
+  }
+}

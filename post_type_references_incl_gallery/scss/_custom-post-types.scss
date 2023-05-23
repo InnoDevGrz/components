@@ -1,0 +1,142 @@
+/* Grids & Teaser Items */
+
+.reference-grid {
+  display: grid;
+  grid-gap: .5em 1em;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: $sm) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: $xxl) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+.blog-reference-grid {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: $md) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .post-content {
+    @media only screen and (min-width: $xxl) {
+      height: 35%;
+    }
+  }
+
+}
+
+
+
+.reference-item {
+  max-width: 700px;
+  margin: 0 auto 3em auto;
+
+  > a:hover ~ .post-content {
+    transform: translateY(-100px);
+  }
+
+  > a:hover ~ .post-content a.btn {
+    text-decoration: none;
+    color: #fff;
+
+    &:before {
+      transform: translateX(0%);
+    }
+  }
+
+
+  .post-content {
+    transform: translateY(-80px);
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    padding: 1.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+    height: 55%;
+    @media screen and (min-width: $xxs) {
+      height: 40%;
+    }
+    @media screen and (min-width: $sm) {
+      height: 50%;
+    }
+    @media screen and (min-width: $md) {
+      height: 40%;
+    }
+    @media screen and (min-width: $lg) {
+      height: 38%;
+    }
+    @media screen and (min-width: $xxl) {
+      height: 40%;
+    }
+
+
+    &:hover {
+      transform: translateY(-100px);
+    }
+
+    &:hover a.btn {
+      text-decoration: none;
+      color: #fff;
+
+      &:before {
+        transform: translateX(0%);
+      }
+    }
+
+
+    > * {
+      text-align: center;
+    }
+  }
+
+
+}
+
+
+/* Single pages */
+
+.single-references{
+
+  .reference-thumbnail,
+  .offer-thumbnail {
+    margin-top: 0 !important;
+    max-height: 60vh;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      @media screen and (min-width: $sm) {
+        margin-top: -10vh;
+      }
+      @media screen and (min-width: $xl) {
+        margin-top: -30vh;
+      }
+    }
+  }
+
+  .reference-infos{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    @media screen and (min-width: $md) {
+      grid-gap: 1em;
+      grid-template-columns: 1fr 2fr;
+
+    }
+  }
+
+
+}
+
+
+
+

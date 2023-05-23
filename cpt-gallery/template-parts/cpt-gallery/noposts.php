@@ -1,0 +1,1 @@
+<div class="no-posts has-text-align-center"><b><?php _e('Keine Produkt-Gallerie vorhanden', 'ize'); ?></b></div>

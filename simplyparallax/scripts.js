@@ -5,6 +5,6 @@ function initParallax(){
     new simpleParallax(image, {
         delay: 0.4,
         scale: 1.5,
-        orientatio: 'down',
+        orientation: 'down',
     });
 }

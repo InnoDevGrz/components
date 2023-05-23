@@ -1,0 +1,1 @@
+CPT mit Justified-Gallery inkl. Lightbox (Colorbox)

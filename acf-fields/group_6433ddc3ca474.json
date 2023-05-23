@@ -1,0 +1,189 @@
+{
+    "key": "group_6433ddc3ca474",
+    "title": "Block Header Slider",
+    "fields": [
+        {
+            "key": "field_6433ddc4640ac",
+            "label": "",
+            "name": "block_headerslider",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Eintrag hinzufügen",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6433dde7d55c8",
+                    "label": "Bild",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image_aspect_ratio_crop",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "crop_type": "aspect_ratio",
+                    "aspect_ratio_width": 16,
+                    "aspect_ratio_height": 8,
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "parent_repeater": "field_6433ddc4640ac"
+                },
+                {
+                    "key": "field_6433df1650161",
+                    "label": "Headline",
+                    "name": "headline",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "placeholder": "",
+                    "new_lines": "br",
+                    "parent_repeater": "field_6433ddc4640ac"
+                },
+                {
+                    "key": "field_6433df4c2b64e",
+                    "label": "Titel Struktur",
+                    "name": "h_tag",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "span": "span",
+                        "h1": "H1",
+                        "h2": "H2",
+                        "h3": "H3"
+                    },
+                    "default_value": "span",
+                    "return_format": "value",
+                    "allow_null": 1,
+                    "layout": "horizontal",
+                    "parent_repeater": "field_6433ddc4640ac"
+                },
+                {
+                    "key": "field_6433e00d7e1e6",
+                    "label": "Untertitel",
+                    "name": "subtitle",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "placeholder": "",
+                    "new_lines": "br",
+                    "parent_repeater": "field_6433ddc4640ac"
+                },
+                {
+                    "key": "field_6433e0d5897e9",
+                    "label": "Untertitel Struktur",
+                    "name": "sub_h_tag",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "span": "span",
+                        "h1": "H1",
+                        "h2": "H2",
+                        "h3": "H3"
+                    },
+                    "default_value": "span",
+                    "return_format": "value",
+                    "allow_null": 1,
+                    "layout": "horizontal",
+                    "parent_repeater": "field_6433ddc4640ac"
+                },
+                {
+                    "key": "field_6433dfb863606",
+                    "label": "Button",
+                    "name": "button",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "parent_repeater": "field_6433ddc4640ac"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/tsc-header-slider"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1681125327
+}

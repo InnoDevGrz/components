@@ -1,0 +1,121 @@
+.post-grid {
+  position: relative;
+
+  .post-item {
+    position: absolute;
+    overflow: hidden;
+
+    .post-image {
+      overflow: hidden;
+
+      img {
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+
+    }
+
+    .post-content {
+      background-color: $primary;
+      padding: 1em;
+      * {
+        color: #fff;
+        text-align: center;
+      }
+
+      h2 {
+        margin-top: 0 !important;
+        padding-top: 1em;
+        text-transform: uppercase;
+        font-size: 1rem !important;
+      }
+
+      .post-btn{
+        display: block;
+        width: fit-content;
+        margin: 1em auto;
+        text-decoration: none;
+        padding: 1em;
+        border: 1px solid #ffffff;
+        transition: all 0.4s linear;
+        background-color: $primary;
+        color: #ffffff;
+        &:hover{
+          background-color: $secondary;
+          color: $base-color
+        }
+      }
+
+    }
+
+  }
+}
+
+
+/*
+
+.post-item {
+    width: 100%;
+    max-width: 450px;
+    padding: .7rem;
+
+    @media (min-width: $xs) {
+        width: 50%;
+    }
+    @media (min-width: $sm) {
+        width: calc(100% / 3);
+    }
+
+    .post-title {
+        margin: 0 0 1rem;
+        color: $widgets-color;
+    }
+
+    .post-content {
+        padding: .5em;
+        background-color: $widgets-bg-color;
+        text-align: center;
+        transition: background-color 300ms ease;
+        @media (min-width: $sm) and (max-width: ($md - 1px)) {
+            font-size: 75%;
+        }
+    }
+
+}
+
+
+.post-grid {
+    margin: 0 -.7rem;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (min-width: $xs) {
+        justify-content: flex-start;
+    }
+}
+
+.similar-post {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: $widgets-bg-color;
+    color: $widgets-color;
+
+    .post-grid {
+        .post-item:nth-child(3) {
+            display: none;
+            visibility: hidden;
+            @media (min-width: $sm) {
+                display: block;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+*/
