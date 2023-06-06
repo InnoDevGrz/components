@@ -1,0 +1,37 @@
+.brand {
+
+  a {
+    display: block;
+    @media screen and (min-width: $breakpoint-nav) {
+      display: none;
+    }
+    img,
+    svg {
+      width: auto;
+      max-width: none;
+      height: $nav-height-mobile - 5px;
+      @media (min-width: $breakpoint-nav) {
+        height: $nav-height-desktop - 5px !important;
+      }
+    }
+
+    svg,img {
+      height: 80px !important;
+      width: 100%;
+    }
+  }
+}
+
+
+// Logo im Menü
+.menu-brand{
+  display: none;
+  @media screen and (min-width: $breakpoint-nav) {
+    display: block;
+    img{
+      height: 100px;
+      width: auto;
+    }
+  }
+
+}

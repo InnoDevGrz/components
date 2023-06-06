@@ -1,0 +1,66 @@
+#menu-button {
+  display: block;
+  height: $nav-height-mobile;
+  cursor: pointer;
+  z-index: 2000;
+  @media (min-width: $breakpoint-nav) {
+    display: none;
+  }
+
+  .sign {
+    display: block;
+    height: 2px;
+    width: 30px;
+    margin: $navMargin 0 $navMargin 20px;
+    border-radius: 2px;
+    background-color: $nav-color;
+    position: relative;
+    transition: background-color 200ms linear, transform 300ms linear;
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $nav-color;
+      position: absolute;
+      right: 0;
+      transition: transform 300ms linear;
+    }
+
+
+    &:before {
+      transform: translateY(-8px);
+      width: 30px;
+    }
+
+    &:after {
+      transform: translateY(8px);
+      width: 30px;
+    }
+  }
+}
+
+.is-menu-style-burger #menu-button {
+  .sign {
+    background-color: $primary !important;
+    &:before, &:after{
+      background-color: $primary !important;
+    }
+  }
+  @media (min-width: $breakpoint-nav) {
+    display: block;
+
+    .sign {
+      width: 35px;
+      &:before, &:after{
+        width: 35px;
+      }
+    }
+
+  }
+}
+
+
+

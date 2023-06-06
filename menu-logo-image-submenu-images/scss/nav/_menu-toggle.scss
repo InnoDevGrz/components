@@ -1,0 +1,49 @@
+.menu-toggle {
+  position: absolute;
+  right: 1em;
+  top: 1px;
+  padding: 25px 11px 24px;
+  cursor: pointer;
+  background-color: rgba($nav-color, 0);
+  transition: background-color 250ms linear;
+
+  @media (min-width: $breakpoint-nav) {
+    display: none;
+    padding: 3em 11px 24px;
+  }
+
+  em {
+    display: block;
+    position: relative;
+    width: 28px;
+    height: 0;
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 15px;
+      position: absolute;
+      transition: transform 200ms linear;
+      background-color: $nav-color;
+    }
+
+    &::before {
+      left: 0;
+      transform: rotate(45deg) translateY(-2px);
+    }
+
+    &:after {
+      right: 0;
+      transform: rotate(-45deg) translateY(-2px);
+    }
+  }
+}
+
+.is-menu-style-burger .menu-toggle {
+  @media (min-width: $breakpoint-nav) {
+    display: block;
+  }
+
+}

@@ -1,0 +1,17 @@
+.admin-bar,
+.admin-bar {
+  #navbar {
+    @media (min-width: 783px) {
+      top: 32px;
+    }
+    @media (min-width: $breakpoint-nav) {
+      .sub-menu {
+        top: 112px !important;
+      }
+    }
+
+
+  }
+
+
+}

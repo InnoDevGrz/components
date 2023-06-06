@@ -1,0 +1,112 @@
+
+> .sub-menu {
+  display: none;
+  padding-bottom: 1em;
+  background-color: $subnav-mobile-bg-color;
+  padding-left: 0;
+  @media (min-width: $breakpoint-nav) {
+    display: flex;
+    max-width: $content-max-width;
+    margin: 0 auto;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-evenly;
+    top: 80px;
+    padding: 2rem;
+    left: 0;
+    right:0;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    background-color: $subnav-desktop-bg-color;
+    transition: all 3s;
+  }
+
+  li {
+    height: 0;
+    transform: scaleY(0);
+
+
+
+    @media (min-width: $breakpoint-nav) {
+      transform: none;
+      height: auto;
+      background-color: $subnav-desktop-bg-color;
+
+
+    }
+
+    &.current-menu-item > a {
+      color: $subnav-active-color;
+      font-weight: 700;
+    }
+  }
+
+
+  a {
+    line-height: 1.2;
+    padding: .8em 0 .8em .7em;
+    font-size: $desktop-subnav-font-size;
+    color: $subnav-mobile-color;
+
+    img{
+      display: none;
+    }
+    @media only screen and (min-width: $breakpoint-nav) {
+      color: $subnav-desktop-color;
+      line-height: 1.4;
+      display: flex;
+      gap: 0.3em;
+      flex-direction: column-reverse;
+      align-items: center;
+      font-weight: 300 !important;
+      text-transform: uppercase;
+      img{
+        display: block;
+       transition: opacity 0.3s;
+      }
+    }
+
+    &:hover {
+      color: $subnav-active-color;
+      //background-color: $subnav-active-bg-color;
+      transition: all 0.3s ease-in-out;
+      img{
+        opacity: 0.8;
+      }
+    }
+
+    @media (min-width: $breakpoint-nav) {
+      padding: .4em 1rem;
+    }
+  }
+
+
+}
+
+
+
+input[type="checkbox"] {
+  display: none;
+
+  &:checked {
+    ~ .menu-toggle {
+      //background-color: darken($primary-color, 2%);
+      em:before,
+      em:after {
+        transform: rotate(0) translateY(-2px);
+      }
+    }
+
+    ~ .sub-menu {
+      display: block;
+      li {
+        @media (max-width: #{$breakpoint-nav - 1px}) {
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+

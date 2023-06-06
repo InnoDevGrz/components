@@ -1,0 +1,42 @@
+$navMargin: (($nav-height-mobile / 2) - 2px);
+
+.nav-menu,
+.sub-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@import "navbar";
+@import "menu-button";
+@import "menu-toggle";
+@import "trigger-menu";
+@import "primary-nav";
+@import "admin-bar";
+
+
+.js {
+  #primary-nav {
+    transition: opacity 200ms linear;
+
+    .nav-menu {
+      > li {
+        > .sub-menu {
+          @media (min-width: $breakpoint-nav) {
+            transition: opacity 200ms;
+
+          }
+
+          li {
+            transition: transform 200ms linear, height 200ms linear;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
