@@ -118,7 +118,7 @@ class tsc__Team
     protected function get_phoneIcon($phone)
     {
         if (!empty($phone)):
-            $icon = '<i class="tsc-icon flaticon-telephone-call member-icon" aria-hidden="true"></i>';
+            $icon = '<i class="tsc-icon flaticon-telephone member-icon" aria-hidden="true"></i>';
             $url = 'tel:' . preg_replace("/[^\+\d]+/", "", $phone);
             return '<a aria-label="' . esc_attr__('Call now', 'ize') . '" href="' . $url . '">' . $icon . '</a>';
         endif;
@@ -128,7 +128,7 @@ class tsc__Team
     protected function get_emailIcon($email)
     {
         if (!empty($email)):
-            $icon = '<i class="tsc-icon flaticon-email member-icon" aria-hidden="true"></i>';
+            $icon = '<i class="tsc-icon flaticon-mail member-icon" aria-hidden="true"></i>';
             $url = antispambot('mailto:' . $email);
             return '<a aria-label="' . __('Send Email', 'ize') . '" href="' . $url . '">' . $icon . '</a>';
         endif;
