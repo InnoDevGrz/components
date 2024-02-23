@@ -1,0 +1,75 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src:
+            url('#{$font-path}/flaticon/#{$flaticon-font}.ttf') format('truetype'),
+            url('#{$font-path}/flaticon/#{$flaticon-font}.woff') format('woff'),
+            url('#{$font-path}/flaticon/#{$flaticon-font}.woff2') format('woff2'),
+            url('#{$font-path}/flaticon/#{$flaticon-font}.eot') format('embedded-opentype'),
+            url('#{$font-path}/flaticon/#{$flaticon-font}.svg') format('svg');
+}
+
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: $flaticon-font !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before {
+    font-family: $flaticon-font !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="flaticon-"], [class*=" flaticon-"] {
+    font-family: $flaticon-font !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+$flaticon-map: (
+        "instagram": "\f101",
+        "facebook-app-symbol": "\f102",
+        "youtube": "\f103",
+        "linkedin": "\f104",
+        "telephone-call": "\f105",
+        "email": "\f106",
+);
+
+.flaticon-instagram:before {
+  content: map-get($flaticon-map, "instagram");
+}
+.flaticon-facebook-app-symbol:before {
+  content: map-get($flaticon-map, "facebook-app-symbol");
+}
+.flaticon-youtube:before {
+  content: map-get($flaticon-map, "youtube");
+}
+.flaticon-linkedin:before {
+  content: map-get($flaticon-map, "linkedin");
+}
+.flaticon-telephone-call:before {
+  content: map-get($flaticon-map, "telephone-call");
+}
+.flaticon-email:before {
+  content: map-get($flaticon-map, "email");
+}
