@@ -1,0 +1,29 @@
+.share {
+  text-align: center;
+  margin: 3rem auto;
+  @media (max-width: $md) {
+    margin: 6rem 0;
+  }
+
+  .title{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  i.tsc-icon {
+    margin: 1rem;
+    &:before{
+      background-color: #000 !important;
+      display: inline-block;
+      padding: .75rem;
+      color: #fff;
+      font-size: 1.25rem;
+      border-radius: 50%;
+
+
+
+    }
+  }
+
+
+}
