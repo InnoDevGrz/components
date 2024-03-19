@@ -42,11 +42,17 @@ class tsc__ShareButtons
 
     public function get_shareMail()
     {
-        $contact_data = new tsc__ContactInfos();
-        return $contact_data->get_emailIcon();
+
+        $url = $this->getCurrentURL();
+        $url = urlencode($url);
+        $icon = '<i class="tsc-icon flaticon-mail" aria-hidden="true"></i>';
+        $html = "<a href='mailto:?body={$url}' aria-label='" . esc_attr__('share us by mail', 'ize') . "'>{$icon}</a>";
+        return $html;
+
+//        mailto:?body=https%3A%2F%2Fpointinger.jkdev.at%2Fprojects%2F
+
+
     }
-
-
 
     public function get_shareOnLinkedIn()
     {
@@ -57,7 +63,6 @@ class tsc__ShareButtons
         return $html;
     }
 
-
     public function get_shareOnWhatsApp()
     {
         $url = $this->getCurrentURL();
@@ -67,13 +72,10 @@ class tsc__ShareButtons
         return $html;
     }
 
-
-
-
     public function get_shareButtons($headline_tag)
     {
         $html = '<div class="share">';  // share button section init
-        $html .= "<{$headline_tag} class='title'>Teile uns auf:</{$headline_tag}>";
+        $html .= "<{$headline_tag} class='title'>Teilen Sie uns auf:</{$headline_tag}>";
         $html .= $this->get_shareOnFacebookButton();
         $html .= $this->get_shareMail();
         $html .= $this->get_shareOnLinkedIn();
