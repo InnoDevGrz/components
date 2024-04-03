@@ -56,9 +56,12 @@
       transition: all 0.5s ease-in-out;
     }
 
-    .team-member-image   img {
-      transition: all 0.5s ease-in-out;
-      transform: scale(1);
+    .team-member-image{
+      overflow: hidden;
+      img {
+        transition: all 0.5s ease-in-out;
+        transform: scale(1);
+      }
     }
 
     &:hover .team-member-image{
