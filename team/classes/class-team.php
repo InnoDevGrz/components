@@ -183,7 +183,7 @@ class tsc__Team
                     </li>
                 <?php endforeach; ?>
 
-            </ul>'
+            </ul>
         <?php endif;
     }
 
