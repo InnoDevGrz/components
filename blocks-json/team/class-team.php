@@ -6,9 +6,7 @@ add_action('acf/init', function () {
     if (function_exists('acf_add_options_page')) {
         tsc__Team::register__AcfOptionPage();
     }
-    if (function_exists('acf_register_block_type')) {
-        tsc__Team::registerAcfBlock();
-    }
+
 
 
 });
@@ -28,7 +26,6 @@ class tsc__Team
 
     static function register__AcfOptionPage()
 
-
     {
 
         acf_add_options_page(array(
@@ -42,30 +39,7 @@ class tsc__Team
             'updated_message' => __("Einstellungen wurden gespeichert", 'ize'),
         ));
 
-
     }
-
-    static function registerAcfBlock()
-    {
-        acf_register_block_type(array(
-            'supports' => array(
-                'anchor' => false,
-                'align' => array('wide'),
-                'mode' => false,
-            ),
-            'name' => 'tsc-block-team',
-            'title' => __('Team', 'ize'),
-            'description' => __('Team Section', 'ize'),
-            'keywords' => array('team', 'member'),
-            'render_template' => 'template-parts/blocks/team.php',
-            'category' => 'tsc-blocks',
-            'icon' => 'slides',
-            'post_types' => array('page'),
-            'mode' => false,
-        ));
-    }
-
-
 
 
 //  template parts
@@ -101,7 +75,7 @@ class tsc__Team
     {
         if (!empty($phone)):
             $url = 'tel:' . preg_replace(["/[^\+\d]+/", "/^\+430/", "/^00430/"], ["", "+43", "0043"], $phone);
-            return '<a class="contact-link" href="' . $url . '">' . $phone . '</a>';
+            return '<a class="contact-link" href="' . $url . '">' . str_replace("0043", "+43", $phone) . '</a>';
         endif;
 
     }
@@ -155,7 +129,7 @@ class tsc__Team
 
                 <?php foreach ($team as $member) : ?>
                     <li class="team-member">
-                        <figure class="is-style-rounded-border team-member-image">
+                        <figure class="team-member-image">
                             <?php
                             echo wp_get_attachment_image($member['image'], 'team_image')
                             ?>
@@ -176,7 +150,7 @@ class tsc__Team
                             echo $this->get__member_name($member['name']);
                             echo $this->get__member_function($member['function']);
                             echo $this->get__member_description($member['description']);
-                            echo $this->get_phoneLink($member['phone']);
+                            echo $this->get_phoneLink(($member['phone']));
                             echo $this->get_emailLink($member['email']);
                             ?>
                         </div>
@@ -191,5 +165,5 @@ class tsc__Team
 
 }
 
-?>
+
 

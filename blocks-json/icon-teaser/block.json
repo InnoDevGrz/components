@@ -1,0 +1,36 @@
+{
+  "name": "acf/iconteaser",
+  "title": "Icon Teaser",
+  "description": "A custom Icon Teaser block that uses ACF fields.",
+  "style": [
+  ],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": [
+    "icon",
+    "teaser"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "icon-teaser.php"
+  },
+  "supports": {
+    "anchor": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "ariaLabel": true
+  },
+  "allowedBlocks": [
+    "core/paragraph",
+    "core/heading",
+    "core/button",
+    "core/spacer",
+    "core/list"
+  ]
+}

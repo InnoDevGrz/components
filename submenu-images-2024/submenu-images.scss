@@ -1,0 +1,63 @@
+#primary-nav .sub-menu{
+
+  .submenu-image{
+    display: none;
+  }
+
+  @media screen and (min-width: $breakpoint-nav) {
+    position: fixed !important;
+    height: 230px;
+    left: -15px;
+    top: 80px !important;
+    right: 0;
+    justify-content: space-evenly;
+    display: flex !important;
+
+    &:before{
+      content: unset !important;
+    }
+
+
+
+    li a {
+      display: flex ;
+      flex-direction: column !important;
+      gap: .7rem;
+      text-align: center !important;
+    }
+
+
+
+    .submenu-image{
+      display: inline-block;
+      width: 200px;
+
+    }
+
+
+  }
+
+
+}
+
+
+
+
+#navbar.full-size-pageheader-menu.lighted #primary-nav .sub-menu{
+
+  &:after{
+    content: "";
+    position: absolute;
+    top: -80px;
+    z-index: -10;
+    background-color: $subnav-desktop-bg-color;
+    left: -15px;
+    right: -15px;
+    height: 81px;
+
+  }
+}
+
+.admin-bar #primary-nav .sub-menu{
+  top: 80px + 32px !important;
+}

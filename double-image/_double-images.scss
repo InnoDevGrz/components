@@ -1,0 +1,19 @@
+.tsc-block-double-images {
+  position: relative;
+  margin-right: 25%;
+  padding-bottom: 16%;
+  background-size: 60%;
+
+  img {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  figure:last-of-type {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 100%;
+  }
+
+
+}
