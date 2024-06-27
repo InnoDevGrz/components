@@ -127,7 +127,7 @@
                     "name": "phone",
                     "aria-label": "",
                     "type": "text",
-                    "instructions": "",
+                    "instructions": "bitte in diesem Format erfassen: 0043 1 1234 5433",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -140,8 +140,7 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_6582c547f7683",
-                    "wpml_cf_preferences": 2
+                    "parent_repeater": "field_6582c547f7683"
                 },
                 {
                     "key": "field_667d13de03b4f",
@@ -228,5 +227,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719473134
+    "modified": 1719480254
 }
