@@ -92,3 +92,28 @@ function initAnimations() {
 }
 
 
+function fadeInLeft(){
+    gsap.utils.toArray('.fade-in-left').forEach(element => {
+        gsap.from(element, {
+            x: '100',
+            scrollTrigger: {
+                trigger: element,
+                start: 'top 85%',
+            }
+
+
+        });
+    });
+}
+function fadeInRight(){
+    gsap.utils.toArray('.fade-in-right').forEach(element => {
+
+        gsap.from(element, {
+            x: '-100',
+            scrollTrigger: {
+                trigger: element,
+                start: 'top 85%',
+            }
+        });
+    });
+}

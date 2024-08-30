@@ -1,0 +1,22 @@
+.tsc-block-txt-img{
+
+
+  @media (min-width: $sm) {
+    display: flex;
+    &.tsc-txt-col-left{
+      flex-direction: row-reverse;
+    }
+
+  }
+  img{
+    @media (min-width: $sm) {
+      width: 70%;
+    }
+  }
+  .txt-img-content{
+    a{
+      text-decoration: underline;
+    }
+  }
+  
+}
