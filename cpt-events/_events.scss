@@ -1,0 +1,27 @@
+.event-list-title{
+  margin-bottom: 1em;
+  @media only screen and (min-width: $sm) {
+    margin-bottom: 2.5em;
+  }
+}
+
+
+ul.event-list{
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  @media only screen and (min-width: $sm) {
+      width: 75%;
+  }
+  @media only screen and (min-width: $lg) {
+    width: 50%;
+  }
+  li{
+    margin-bottom: 1em;
+    @media only screen and (min-width: $sm) {
+      margin-bottom: 2em;
+    }
+  }
+}

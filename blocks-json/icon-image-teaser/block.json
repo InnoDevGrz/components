@@ -1,0 +1,36 @@
+{
+  "name": "acf/icon-image-teaser",
+  "title": "Icon & Image Teaser",
+  "description": "A custom icon & image teaser block with content",
+  "style": [
+  ],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": [
+    "icon",
+    "teaser"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "icon-image-teaser-block.php"
+  },
+  "supports": {
+    "anchor": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "ariaLabel": true
+  },
+  "allowedBlocks": [
+    "core/paragraph",
+    "core/heading",
+    "core/button",
+    "core/spacer",
+    "core/list"
+  ]
+}

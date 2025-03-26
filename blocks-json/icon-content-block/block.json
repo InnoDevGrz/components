@@ -1,7 +1,7 @@
 {
-  "name": "acf/iconteaser",
-  "title": "Icon Teaser",
-  "description": "A custom Icon Teaser block that uses ACF fields.",
+  "name": "acf/icon-content-block",
+  "title": "Icon & Content Block",
+  "description": "A custom icon block with content right",
   "style": [
   ],
   "category": "formatting",
@@ -12,7 +12,7 @@
   ],
   "acf": {
     "mode": "preview",
-    "renderTemplate": "icon-teaser.php"
+    "renderTemplate": "icon-content-block.php"
   },
   "supports": {
     "anchor": true,

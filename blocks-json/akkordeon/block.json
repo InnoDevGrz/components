@@ -1,0 +1,36 @@
+{
+  "name": "acf/tsc-akkordeon",
+  "title": "Akkordeon",
+  "description": "A custom Akkordeon block that uses ACF fields.",
+  "style": [
+  ],
+  "category": "formatting",
+  "icon": "text-page",
+  "keywords": [
+    "akkordeon",
+    "text"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "akkordeon.php"
+  },
+  "supports": {
+    "anchor": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "ariaLabel": true
+  },
+  "allowedBlocks": [
+    "core/paragraph",
+    "core/heading",
+    "core/button",
+    "core/spacer",
+    "core/list"
+  ]
+}

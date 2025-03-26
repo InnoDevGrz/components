@@ -1,0 +1,32 @@
+{
+  "name": "acf/tsc-event",
+  "title": "Event Block",
+  "description": "A custom block showing current events",
+  "style": [
+  ],
+  "category": "formatting",
+  "icon": "calendar",
+  "keywords": [
+    "event",
+    "events",
+    "slider"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "events.php"
+  },
+  "supports": {
+    "anchor": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "color": {
+      "background": false,
+      "text": false
+    },
+    "ariaLabel": true
+  },
+  "allowedBlocks": [
+  ]
+}

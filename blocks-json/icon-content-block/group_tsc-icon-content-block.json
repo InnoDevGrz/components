@@ -1,5 +1,5 @@
 {
-    "key": "group_tsc-icon-teaser",
+    "key": "group_tsc-icon-content-block",
     "title": "Icon Teaser",
     "fields": [
         {
@@ -33,7 +33,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/iconteaser"
+                "value": "acf\/icon-content-block"
             }
         ]
     ],

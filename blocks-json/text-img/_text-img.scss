@@ -1,0 +1,32 @@
+.tsc-block-txt-img {
+
+  position: relative;
+
+  .txt-img-content {
+    @media (min-width: $md) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      bottom: 0;
+    }
+    @media (min-width: $lg) {
+      width: 45%;
+
+    }
+    @media (min-width: $xl) {
+      width: 30%;
+    }
+  }
+
+
+  &.tsc-txt-col-left {
+    .txt-img-content {
+      left: unset;
+      right: 0;
+    }
+
+  }
+
+
+}

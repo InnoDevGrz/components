@@ -10,6 +10,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 let tl = gsap.timeline();
+tl.from('.is-style-gb-header', {
+    right: '-100vw',
+    opacity: 0,
+    duration: .7,
+    ease: "power2.out"
+})
+    .from('.is-style-header-title', {
+        height: '1px',
+        rotateX: 180,
+        opacity: 0,
+        duration: 0.8,
+    })
+/*   .from('.is-style-header-info', {
+       y: -500,
+       duration: 1,
+       ease: "elastic.out(1, 0.3)"
+   })*/
+
+;
+
+
+
+
+let tl = gsap.timeline();
 tl.from('.pageheader .title', {
     x: 500,
     duration: .8,
@@ -117,3 +141,18 @@ function fadeInRight(){
         });
     });
 }
+
+function zoomIn() {
+    gsap.from('.zoom-in', {
+        fontSize: '0.1rem',  // Startwert der Animation
+        duration: 2,         // Dauer der Animation
+        scrollTrigger: {
+            trigger: '.zoom-in',   // Element, das die Animation auslöst
+            start: "top 80%",      // Startpunkt der Animation
+            end: "top 30%",        // Endpunkt der Animation
+            scrub: true,           // Animation ist mit Scrollen synchron
+            ease: "power3.out",    // Sanfter Übergang
+        }
+    });
+}
+

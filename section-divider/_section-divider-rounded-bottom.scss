@@ -1,0 +1,21 @@
+
+.is-style-divider-round-bottom {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 16rem !important;
+
+  &:after {
+    position: absolute;
+    content: "";
+    background-color: $base-bg-color;
+    border-radius: 100%;
+    top: calc(100% - 100px);
+    left: -50%;
+    right: -50%;
+    width: 200%;
+    height: 700px;
+
+  }
+
+
+}

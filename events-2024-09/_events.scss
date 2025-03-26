@@ -1,0 +1,31 @@
+.event-list{
+  padding: 0;
+  list-style-type: none;
+}
+.event-item{
+  margin-bottom: 1rem;
+  @media (min-width: $wp-col-break) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .event-title{
+    margin-top: 0;
+  }
+
+}
+
+
+
+.single-event{
+/*  header{
+    @media (min-width: $wp-col-break) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
+  }*/
+
+}

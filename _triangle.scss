@@ -1,0 +1,12 @@
+&:before {
+  content: "";
+  top: 1px;
+  left: 15px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 12px 16px 12px;
+  border-color: transparent transparent $subnav-desktop-bg-color transparent;
+
+}

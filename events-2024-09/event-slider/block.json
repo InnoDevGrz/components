@@ -1,0 +1,31 @@
+{
+  "name": "acf/tsc-event-slider",
+  "title": "Event-Slider Block",
+  "description": "A custom block showing current events in a Slider",
+  "style": [
+  ],
+  "category": "formatting",
+  "icon": "slides",
+  "keywords": [
+    "event",
+    "events"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "event-slider.php"
+  },
+  "supports": {
+    "anchor": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "color": {
+      "background": false,
+      "text": false
+    },
+    "ariaLabel": true
+  },
+  "allowedBlocks": [
+  ]
+}

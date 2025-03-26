@@ -1,0 +1,21 @@
+.tsc-masonry-gallery{
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  a {
+    width: 100%;
+    @media (min-width: $xs) {
+      width: 48%; /* 2 Spalten mit 4% Gutter */
+    }
+    @media (min-width: $md) {
+      width: 31.33%; /* 3 Spalten mit Gutter */
+    }
+
+    img{
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+  }
+}
