@@ -1,0 +1,17 @@
+.wp-block-acf-tsc-overlay-video {
+  video {
+    max-width: 100% !important;
+    position: relative;
+  }
+
+  .overlay {
+    max-width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+
+}

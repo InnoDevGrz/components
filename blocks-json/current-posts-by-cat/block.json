@@ -1,0 +1,35 @@
+{
+  "name": "acf/current-posts-by-cat",
+  "title": "Aktuelle Beiträge nach Kategorie",
+  "description": "A custom posts block showing current operations.",
+  "style": [
+  ],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": [
+    "posts",
+    "news",
+    "beitrag",
+    "beiträge"
+  ],
+
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "current-posts-by-cat.php"
+  },
+  "supports": {
+    "anchor": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "ariaLabel": true
+  },
+  "allowedBlocks": [
+
+  ]
+}

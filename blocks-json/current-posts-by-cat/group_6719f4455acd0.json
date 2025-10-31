@@ -1,0 +1,47 @@
+{
+    "key": "group_6719f4455acd0",
+    "title": "Anzahl anzuzeigender Beiträge",
+    "fields": [
+        {
+            "key": "field_6719f4458e05f",
+            "label": "Anzahl der Beiträge",
+            "name": "no_of_posts",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "Bitte stelle hier die Anzahl der Beiträge ein, die du anzeigen möchtest.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": -1,
+            "max": 30,
+            "allow_in_bindings": 0,
+            "step": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/current-posts-by-cat-gallery"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1733386551
+}

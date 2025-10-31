@@ -1,0 +1,46 @@
+.tsc-image-slider{
+  background-color: #ebebeb;
+  max-width: unset !important;
+  position: relative;
+
+
+  &::after{
+    position: absolute;
+    content: "innoSIDE Image Slider";
+    color: #fff;
+    background-color: #1d1d1d;
+    bottom: 0;
+    left: 0;
+    width: fit-content;
+    padding: 1rem 2rem;
+  }
+
+
+
+  .splide{
+    max-width: 100% !important;
+
+    .splide__list{
+      list-style-type: none;
+      width: 100%;
+      li{
+
+        .image-slide{
+          width: 150px !important;
+          height: 75px !important;
+          margin-right: 10px;
+          overflow: hidden;
+          background-size: 200px;
+          background-repeat: no-repeat;
+        }
+      }
+
+    }
+
+  }
+  .acf-innerblocks-container{
+
+    margin: 0 1rem;
+  }
+
+}

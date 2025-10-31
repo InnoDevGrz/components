@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tsc/inno-akkordeon",
+  "version": "0.1.0",
+  "title": "Inno Akkordeon",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Ein einzelnes Akkordeon-Panel mit Frage und Antwort",
+  "keywords": [
+    "faq",
+    "akkordeon",
+    "eintrag"
+  ],
+  "textdomain": "tsc",
+  "example": {
+    "attributes": {
+      "title": "Wer kann eine Förderung beantragen?",
+      "open": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": "button"
+    },
+    "open": {
+      "type": "boolean",
+      "default": false
+    },
+    "uid": {
+      "type": "string"
+    }
+  }
+}

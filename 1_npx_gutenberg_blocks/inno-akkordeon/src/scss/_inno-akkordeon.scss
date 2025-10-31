@@ -1,0 +1,58 @@
+.wp-block-tsc-inno-akkordeon {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .inno-accordion-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+   .inno-accordion-button {
+      all: unset;
+      cursor: pointer;
+      flex: 1;
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-align: left;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &::after {
+        content: '+';
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+        border-radius: 50%;
+        background-color: #005f7f;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+    }
+
+
+  }
+  &.is-open button.inno-accordion-button::after {
+    content: '−'; // Minus statt Plus wenn geöffnet
+  }
+
+
+  .inno-accordion-content {
+    padding-left: 1rem;
+    display: block;
+
+    &[hidden] {
+      display: none;
+    }
+  }
+}

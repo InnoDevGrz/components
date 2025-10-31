@@ -1,0 +1,43 @@
+{
+  "name": "acf/counter-icon-text",
+  "title": "Ablauf",
+  "description": "",
+  "style": [
+  ],
+  "category": "formatting",
+  "icon": "slides",
+  "keywords": [
+    "ablauf",
+    "text",
+    "icon",
+    "counter"
+  ],
+  "acf": {
+    "blockVersion" : 3,
+    "mode": "preview",
+    "renderTemplate": "counter-icon-text.php"
+  },
+  "supports": {
+    "anchor": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "ariaLabel": true,
+    "align": true
+  },
+  "allowedBlocks": [
+    "core/paragraph",
+    "core/heading",
+    "core/buttons",
+    "core/spacer",
+    "core/list",
+    "core/group",
+    "core/columns",
+    "core/separator"
+  ]
+}

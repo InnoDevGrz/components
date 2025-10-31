@@ -156,3 +156,53 @@ function zoomIn() {
     });
 }
 
+function typewriting() {
+    document.fonts.ready.then(() => {
+        document.querySelectorAll('.is-style-typewriting').forEach(element => {
+            let typeChars = SplitText.create(element, {
+                type: 'chars, words',
+                charsClass: 'char'
+            });
+
+            gsap.from(typeChars.chars, {
+                autoAlpha: 0,
+                ease: "power2.inOut",
+                duration: 0.3,
+                stagger: {
+                    each: 0.05,
+                    from: "start"
+                },
+                scrollTrigger: {
+                    trigger: element,
+                    start: 'top 95%',
+                }
+            });
+        });
+    });
+}
+function waveChars() {
+    document.fonts.ready.then(() => {
+        document.querySelectorAll('.is-style-wave-chars').forEach(element => {
+            let splitWave = SplitText.create(element, {
+                type: 'chars, words',
+                charsClass: 'char'
+            });
+
+            gsap.from(splitWave.chars, {
+                y: 40,
+                skewY: 30,
+                autoAlpha: 0,
+                ease: "power3.out",
+                duration: 0.3,
+                stagger: {
+                    each: 0.03,
+                    from: "start"
+                },
+                scrollTrigger: {
+                    trigger: element,
+                    start: 'top 75%',
+                }
+            });
+        });
+    });
+}

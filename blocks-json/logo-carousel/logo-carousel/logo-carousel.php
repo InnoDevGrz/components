@@ -22,7 +22,7 @@ if (isset($block['anchor'])) {
 /**
  * CSS Klassen übergeben, die im Gutenberg Editor eingegeben werden können
  */
-$class_name = 'tsc-akkordeon';
+$class_name = 'logo-carousel ';
 if (isset($block['className'])) {
     $class_name .= ' ' . $block['className'];
 }
@@ -61,29 +61,30 @@ if (isset($block['textColor'])) {
      * */
 
     if ($logos): ?>
-        <section class="partner-carousel">
-            <h2 class="has-text-align-center"><?php _e('Unsere Partner', 'ize') ?></h2>
-            <div class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <?php foreach ($logos as $logo): ?>
-                            <li class="splide__slide">
-                                <div class="wrapper">
-                                    <?php if (!empty($logo['img'])) echo wp_get_attachment_image($logo['img'], 'full'); ?>
-                                </div>
-                            </li>
-                        <?php endforeach; ?>
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <?php foreach ($logos as $logo): ?>
+                        <li class="splide__slide">
+                            <div class="wrapper">
+                                <?php if (!empty($logo['img'])) echo wp_get_attachment_image($logo['img'], 'full'); ?>
+                            </div>
+                        </li>
+                    <?php endforeach; ?>
 
-                    </ul>
-                </div>
+                </ul>
             </div>
+        </div>
 
-            <?php
-            wp_enqueue_style('slider-css');
-            wp_enqueue_script('slider-js');
-            ?>
 
-        </section>
+        <?php
+
+        wp_enqueue_style('slider-css');
+        wp_enqueue_style('splide-style');
+        wp_enqueue_script('splide-script');
+        wp_enqueue_script('slider-script');
+        ?>
+
     <?php endif; ?>
 </div>
 

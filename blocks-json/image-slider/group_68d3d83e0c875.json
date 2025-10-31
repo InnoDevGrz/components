@@ -1,11 +1,11 @@
 {
-    "key": "group_66e71498a43fa",
-    "title": "Logo Carousel",
+    "key": "group_68d3d83e0c875",
+    "title": "Image Slider",
     "fields": [
         {
-            "key": "field_66e71499a5efa",
-            "label": "Logos",
-            "name": "logos",
+            "key": "field_68d3d83ee1c97",
+            "label": "Image Slides",
+            "name": "image_slides",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -25,8 +25,8 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_68e651a136ecc",
-                    "label": "Logo",
+                    "key": "field_68d3d86ee1c98",
+                    "label": "Bild",
                     "name": "img",
                     "aria-label": "",
                     "type": "image",
@@ -49,28 +49,51 @@
                     "mime_types": "",
                     "allow_in_bindings": 0,
                     "preview_size": "medium",
-                    "parent_repeater": "field_66e71499a5efa"
-                },
-                {
-                    "key": "field_68e651bc36ecd",
-                    "label": "Url",
-                    "name": "url",
-                    "aria-label": "",
-                    "type": "url",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "allow_in_bindings": 0,
-                    "placeholder": "",
-                    "parent_repeater": "field_66e71499a5efa"
+                    "parent_repeater": "field_68d3d83ee1c97"
                 }
             ]
+        },
+        {
+            "key": "field_68d3de44ae78b",
+            "label": "Höhe des Sliders",
+            "name": "height",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 700,
+            "min": 500,
+            "max": 2000,
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68d3e2c3593a4",
+            "label": "Overlay Color",
+            "name": "overlay_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "rgba(0,0,0,0.5)",
+            "enable_opacity": 1,
+            "return_format": "string",
+            "allow_in_bindings": 0
         }
     ],
     "location": [
@@ -78,7 +101,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/logocarousel"
+                "value": "acf\/tsc-image-slider"
             }
         ]
     ],
@@ -91,6 +114,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "display_title": "",
-    "modified": 1759924873
+    "modified": 1758716687
 }

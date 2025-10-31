@@ -1,0 +1,39 @@
+{
+  "name": "acf/tsc-image-slider",
+  "title": "Image Slider",
+  "description": "Slider Header mit ACF-Inner-Block-Content. Gutenberg Content bitte einfach über den Slider ziehen, um diesen hinzuzufügen",
+  "style": [
+  ],
+  "category": "formatting",
+  "icon": "slides",
+  "keywords": [
+    "slide",
+    "image"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "image-slider.php"
+  },
+  "supports": {
+    "anchor": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "ariaLabel": true,
+    "align": true
+  },
+  "allowedBlocks": [
+    "core/paragraph",
+    "core/heading",
+    "core/buttons",
+    "core/spacer",
+    "core/list",
+    "core/group",
+    "core/columns"
+  ]
+}
