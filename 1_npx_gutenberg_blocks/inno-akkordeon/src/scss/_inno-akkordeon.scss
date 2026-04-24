@@ -1,7 +1,11 @@
+$icon-size: 2.5rem;
+$max-width: 800px;
+
+
 .wp-block-tsc-inno-akkordeon {
   border-bottom: 1px solid #ccc;
   padding: 1rem 0;
-  max-width: 800px;
+  max-width: $max-width;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -24,11 +28,13 @@
       justify-content: space-between;
       align-items: center;
 
+
       &::after {
+
         content: '+';
-        width: 3rem;
-        height: 3rem;
-        line-height: 3rem;
+        width: $icon-size;
+        height: $icon-size;
+        line-height: $icon-size;
         border-radius: 50%;
         background-color: #005f7f;
         color: white;

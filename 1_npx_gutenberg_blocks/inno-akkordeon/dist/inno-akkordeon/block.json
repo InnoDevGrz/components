@@ -13,12 +13,10 @@
     "eintrag"
   ],
   "textdomain": "tsc",
-  "example": {
-    "attributes": {
-      "title": "Wer kann eine Förderung beantragen?",
-      "open": false
-    }
-  },
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+  "style": "file:./style.css",
+  "editorStyle": "file:./editor.css",
   "supports": {
     "html": false,
     "anchor": true,
@@ -31,8 +29,6 @@
       "text": true
     }
   },
-  "editorScript": "file:./index.js",
-  "viewScript": "file:./view.js",
   "attributes": {
     "title": {
       "type": "string",
@@ -46,5 +42,19 @@
     "uid": {
       "type": "string"
     }
+  },
+  "example": {
+    "attributes": {
+      "title": "Wie beantrage ich die Förderung?",
+      "open": false
+    },
+    "innerBlocks": [
+      {
+        "name": "core/paragraph",
+        "attributes": {
+          "content": "Du kannst den Antrag online über das Förderportal stellen. Bitte halte alle nötigen Unterlagen bereit."
+        }
+      }
+    ]
   }
 }

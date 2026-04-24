@@ -1,0 +1,33 @@
+@use "../variables" as vars;
+
+
+.wp-block-create-block-inno-image-text-overlay {
+  display: block;
+  max-width: 700px;
+  position: relative;
+  margin-block-end: 100px !important;
+  overflow: visible;
+  .inner-container {
+    padding: 1rem;
+
+  }
+
+  @media (min-width: vars.$lg) {
+    .inner-container{
+      position: absolute;
+      max-height: 100%;
+      height: fit-content;
+      bottom: -20%;
+      right: -20%;
+      padding: 2rem;
+      max-width: 500px;
+    }
+  }
+  @media (min-width: vars.$xl) {
+    .inner-container{
+      position: absolute;
+      max-height: 80%;
+    }
+  }
+
+}

@@ -206,3 +206,34 @@ function waveChars() {
         });
     });
 }
+
+
+function fadeInUpOnScroll() {
+    gsap.utils.toArray(".is-style-fade-in-up-scroll").forEach(element => {
+        gsap.from(element, {
+            y: 300,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: element,
+                start: "top 50%",
+            }
+        });
+    });
+}
+function fadeInDownOnScroll() {
+    gsap.utils.toArray(".is-style-fade-in-down-scroll").forEach(element => {
+        gsap.from(element, {
+            y: -300,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: element,
+                start: "top 50%",
+                once: true
+            }
+        });
+    });
+}

@@ -1,54 +1,38 @@
+/**
+ * Retrieves the translation of text.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
+ */
 import { __ } from '@wordpress/i18n';
-import {
-	useBlockProps,
-	RichText,
-	InnerBlocks
-} from '@wordpress/block-editor';
-import { useEffect } from '@wordpress/element';
 
-export default function Edit({ attributes, setAttributes, clientId }) {
-	const { title, open, uid } = attributes;
+/**
+ * React hook that is used to mark the block wrapper element.
+ * It provides all the necessary props like the class name.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
+ */
+import { useBlockProps } from '@wordpress/block-editor';
 
-	// UID einmalig setzen
-	useEffect(() => {
-		if (!uid) {
-			setAttributes({ uid: `accordion-content-${clientId}` });
-		}
-	}, []);
+/**
+ * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
+ * Those files can contain any CSS code that gets applied to the editor.
+ *
+ * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
+ */
+// import './editor.scss';
 
-	const accordionId = uid || `accordion-content-${clientId}`;
-
-	const blockProps = useBlockProps({
-		className: open ? 'is-open' : 'is-closed',
-	});
-
+/**
+ * The edit function describes the structure of your block in the context of the
+ * editor. This represents what the editor will render when the block is used.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
+ *
+ * @return {Element} Element to render.
+ */
+export default function Edit() {
 	return (
-		<div {...blockProps}>
-			<h3 className="inno-accordion-heading">
-				<RichText
-					tagName="button"
-					value={title}
-					className="inno-accordion-button"
-					onChange={(val) => setAttributes({ title: val })}
-					placeholder={__('Frage hier eingeben ...', 'tsc')}
-					aria-expanded={open}
-					aria-controls={accordionId}
-					type="button"
-					onClick={() => setAttributes({ open: !open })}
-				/>
-			</h3>
-
-			<div
-				className="inno-accordion-content"
-				id={accordionId}
-				hidden={!open}
-			>
-				<InnerBlocks
-					allowedBlocks={['core/paragraph', 'core/list', 'core/image', 'core/heading']}
-					orientation="vertical"
-					placeholder={__('Hier Inhalte einfügen…', 'tsc')}
-				/>
-			</div>
-		</div>
+		<p { ...useBlockProps() }>
+			{ __( 'Inno Header – hello from the editor!', 'inno-header' ) }
+		</p>
 	);
 }
